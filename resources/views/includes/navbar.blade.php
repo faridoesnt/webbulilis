@@ -23,7 +23,7 @@
                 <li class="nav-item">
                     <a
                     href="{{ route('login') }}"
-                    class="btn btn-dark nav-link px-4 text-white rounded-0"
+                    class="btn btn-warning nav-link px-4 text-white rounded-0"
                     >MASUK</a
                 >
                 </li>

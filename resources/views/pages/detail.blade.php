@@ -54,7 +54,7 @@
                         alt=""
                       />
                     </div>
-                    
+
                   </a>
                 </div>
               </div>
@@ -89,7 +89,7 @@
           <form method="POST" action="{{ route('detail-add-to-cart', $products->id) }}" enctype="multipart/form-data">
           @csrf
           <div class="container-fluid">
-            @auth  
+            @auth
               <div class="row">
                 <div class="col-12 col-lg-6 mb-3">
                   <strong>PILIH UKURAN :</strong><br>
@@ -118,14 +118,14 @@
                 @auth
                     <button
                       type="submit"
-                      class="btn btn-dark px-4 text-white btn-black mb-3"
+                      class="btn btn-warning px-4 text-white btn-black mb-3"
                     >
                       Masukkan ke Keranjang
                     </button>
                 @else
                   <a
                     href="{{ route('login') }}"
-                    class="btn btn-dark px-4 text-white btn-black mb-3"
+                    class="btn btn-warning px-4 text-white btn-black mb-3"
                   >
                     Masuk
                   </a>

@@ -104,7 +104,7 @@
                                                 <form action="{{ route('cart-delete', $cart->id) }}" method="POST">
                                                     @method('DELETE')
                                                     @csrf
-                                                    <button type="submit" class="btn btn-dark"> Hapus </button>
+                                                    <button type="submit" class="btn btn-warning"> Hapus </button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -128,10 +128,10 @@
                                     <div class="product-title">Total :</div>
                                 </div>
                                 <div class="col-6 col-md-4">
-                                    <div class="product-title text-success">Rp. {{ number_format($totalPrice ?? 0) }}</div>
+                                    <div style="font-size: 22px; font-weight: bold;">Rp. {{ number_format($totalPrice ?? 0) }}</div>
                                 </div>
                                 <div class="col-12 col-md-4">
-                                    <a href="{{ route('checkout') }}" class="btn btn-dark mt-4 px-4 btn-block rounded-0">
+                                    <a href="{{ route('checkout') }}" class="btn btn-warning mt-4 px-4 btn-block rounded-0">
                                     Checkout
                                     </a>
                                 </div>

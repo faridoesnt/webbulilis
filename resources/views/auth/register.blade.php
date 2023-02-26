@@ -22,11 +22,11 @@
                       <label>Nama Lengkap</label>
                       <input id="name"
                             type="text"
-                            v-model="name" 
-                            class="form-control rounded-0 @error('name') is-invalid @enderror" 
-                            name="name" 
-                            value="{{ old('name') }}" 
-                            required 
+                            v-model="name"
+                            class="form-control rounded-0 @error('name') is-invalid @enderror"
+                            name="name"
+                            value="{{ old('name') }}"
+                            required
                             autofocus>
                       @error('name')
                           <span class="invalid-feedback" role="alert">
@@ -36,15 +36,15 @@
                     </div>
                     <div class="form-group">
                       <label>Email</label>
-                      <input id="email" 
+                      <input id="email"
                             v-model="email"
-                            @change="checkForEmailAvailability()" 
-                            type="email" 
+                            @change="checkForEmailAvailability()"
+                            type="email"
                             class="form-control rounded-0 @error('email') is-invalid @enderror"
                             :class="{ 'is-valid' : this.email_unavailable }"
-                            name="email" 
-                            value="{{ old('email') }}" 
-                            required 
+                            name="email"
+                            value="{{ old('email') }}"
+                            required
                             autocomplete="email">
                       @error('email')
                           <span class="invalid-feedback" role="alert">
@@ -54,11 +54,11 @@
                     </div>
                     <div class="form-group">
                       <label>Password</label>
-                      <input id="password" 
-                            type="password" 
-                            class="form-control rounded-0 @error('password') is-invalid @enderror" 
-                            name="password" 
-                            required 
+                      <input id="password"
+                            type="password"
+                            class="form-control rounded-0 @error('password') is-invalid @enderror"
+                            name="password"
+                            required
                             autocomplete="new-password">
                       @error('password')
                           <span class="invalid-feedback" role="alert">
@@ -68,11 +68,11 @@
                     </div>
                     <div class="form-group">
                       <label>Konfirmasi Password</label>
-                      <input id="password-confirm" 
-                            type="password" 
-                            class="form-control rounded-0 @error('password_confirmation') is-invalid @enderror" 
-                            name="password_confirmation" 
-                            required 
+                      <input id="password-confirm"
+                            type="password"
+                            class="form-control rounded-0 @error('password_confirmation') is-invalid @enderror"
+                            name="password_confirmation"
+                            required
                             autocomplete="new-password">
                       @error('password_confirmation')
                           <span class="invalid-feedback" role="alert">
@@ -82,7 +82,7 @@
                     </div>
                     <button
                       type="submit"
-                      class="btn btn-dark btn-block mt-4 rounded-0"
+                      class="btn btn-warning btn-block mt-4 rounded-0"
                       :disabled="this.email_unavailable"
                     >
                       Daftar
@@ -123,7 +123,7 @@
                   .then(function (response) {
                     if(response.data == 'Available'){
                         self.$toasted.error(
-                          "Email anda tersedia!", 
+                          "Email anda tersedia!",
                           {
                             position: "top-center",
                             className: "rounded",
@@ -133,7 +133,7 @@
                         self.email_unavailable = false;
                     } else {
                         self.$toasted.error(
-                          "Maaf, email sudah terdaftar", 
+                          "Maaf, email sudah terdaftar",
                           {
                             position: "top-center",
                             className: "rounded",

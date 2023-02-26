@@ -24,6 +24,17 @@
                         </a>
                     </div>
                 </div>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h3 class="mb-3">Lokasi Kami</h3><hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        UMKM Universitas Gunadarma<br>
+                        LPM UG Gedung E541 Kelapa Dua - Depok
+                    </div>
+                </div>
             </div>
         </section>
     </div>

@@ -234,7 +234,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="row plans" id="ongkir">
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -251,12 +251,12 @@
                             <div class="col-4 col-md-3">
                                 <div class="product-title" name="product_price">Rp. {{ number_format($productPrice ?? 0) }}</div>
                                 <div class="product-subtitle">Total Harga Produk</div>
-                            </div> 
+                            </div>
                             <div class="col-4 col-md-2">
                                 <input type="hidden" name="shipping_price" id="shipping_price">
                                 <div class="product-title" id="shipping">Rp. 0</div>
                                 <div class="product-subtitle">Harga Pengiriman</div>
-                            </div> 
+                            </div>
                             <div class="col-4 col-md-6 text-right">
                                 <input type="hidden" name="total_price" id="total_price">
                                 <div class="product-title text-success" id="total">Rp. {{ number_format($productPrice ?? 0) }}</div>
@@ -266,8 +266,8 @@
                                 <div id="service"></div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" id="btn-checkout" class="btn btn-dark mt-4 px-4 btn-block rounded-0">
-                                Checkout
+                                <button type="submit" id="btn-checkout" class="btn btn-warning mt-4 px-4 btn-block rounded-0">
+                                Lanjutkan Pembayaran
                                 </button>
                             </div>
                         </div>
@@ -385,18 +385,18 @@
                                                     <div class="plan-details">
                                                         <span>${value.service}</span>
                                                         <p>${value.description}<br>Rp. ${value.cost[0].value}<br>${value.cost[0].etd} Hari</p>
-                                                    </div>    
+                                                    </div>
                                                 </div>
                                             </label>
                                             `;
                                     $('#ongkir').html(html);
 
                                     jQuery(document).ready(function () {
-            
+
                                         jQuery('.cost').on('click',function(){
-                                        
+
                                             var indx = jQuery(this).index('.cost');
-                                            
+
                                             jQuery('.service')[indx].click();
 
                                             document.getElementById("btn-checkout").disabled=false
@@ -461,18 +461,18 @@
                                                     <div class="plan-details">
                                                         <span>${value.service}</span>
                                                         <p>${value.description}<br>Rp. ${value.cost[0].value}<br>${value.cost[0].etd} Hari</p>
-                                                    </div>    
+                                                    </div>
                                                 </div>
                                             </label>
                                             `;
                                         $('#ongkir').html(html);
 
                                         jQuery(document).ready(function () {
-            
+
                                             jQuery('.cost').on('click',function(){
-                                            
+
                                                 var indx = jQuery(this).index('.cost');
-                                                
+
                                                 jQuery('.service')[indx].click();
 
                                                 document.getElementById("btn-checkout").disabled=false
@@ -538,18 +538,18 @@
                                                         <div class="plan-details">
                                                             <span>${value.service}</span>
                                                             <p>${value.description}<br>Rp. ${value.cost[0].value}<br>${value.cost[0].etd} Hari</p>
-                                                        </div>    
+                                                        </div>
                                                     </div>
                                                 </label>
                                                 `;
                                             $('#ongkir').html(html);
 
                                             jQuery(document).ready(function () {
-                
+
                                                 jQuery('.cost').on('click',function(){
-                                                
+
                                                     var indx = jQuery(this).index('.cost');
-                                                    
+
                                                     jQuery('.service')[indx].click();
 
                                                     document.getElementById("btn-checkout").disabled=false
