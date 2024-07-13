@@ -27,7 +27,11 @@
                         <div class="row">
                             <div class="col-12 col-md-4">
                                 <div class="product-title">Kode Transaksi Detail</div>
-                                <div class="product-subtitle">{{ $transaction_data->code }}</div>
+                                <div class="product-subtitle">{{ $transaction_data->transaction->code }}</div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="product-title">Tanggal Transaksi</div>
+                                <div class="product-subtitle">{{ date('d-m-Y', strtotime($transaction_data->created_at)) }}</div>
                             </div>
                             <div class="col-12 col-md-4">
                                 <div class="product-title">Nama Produk</div>
@@ -125,12 +129,21 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col-12 text-right">
-                        <a
-                            href="{{ route('dashboard-transaction') }}"
-                            class="btn btn-dark btn-lg mt-4"
-                        >
-                            Kembali
-                        </a>
+                            @if ($transaction_data->shipping_status == 'SHIPPING')
+                                {{-- <a href="{{ route('received-order', $transaction_data->transactions_id) }}" class="btn btn-warning text-white btn-lg mt-4">
+                                    Pesanan Diterima
+                                </a> --}}
+                                <form action="{{ route('received-order', $transaction_data->transactions_id) }}" method="POST">
+                                    @method('PUT')
+                                    @csrf
+                                    <button type="submit" class="btn btn-warning text-white btn-lg mt-4">
+                                        Pesanan Diterima
+                                    </button>
+                                </form>
+                            @endif
+                            <a href="{{ route('dashboard-transaction') }}" class="btn btn-dark btn-lg mt-4">
+                                Kembali
+                            </a>
                         </div>
                     </div>
                     </div>

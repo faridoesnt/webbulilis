@@ -39,4 +39,9 @@ class HomeController extends Controller
     {
         return view('pages.contact');
     }
+
+    public function infoBidangLainTeknikArsitek()
+    {
+        return view('pages.info-bidang-lain.teknik-arsitek');
+    }
 }

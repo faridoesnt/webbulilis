@@ -221,7 +221,7 @@
                                         <option value="jne">JNE</option>
                                         <option value="pos">POS</option>
                                         <option value="tiki">TIKI</option>
-                                        <option value="COD">Datang Ke Toko</option>
+                                        <option value="COD">Datang Ke Lokasi Kami</option>
                                         <option value="GOJEK">Gojek</option>
                                     </select>
                                 </div>
@@ -590,7 +590,7 @@
                                 var html = "";
                                 html += `
                                         <div class="col-12 text-center mt-2">
-                                            Setelah pembayaran berhasil, silahkan datang ke toko dengan menunjukkan kode transaksi.
+                                            Setelah pembayaran berhasil, silahkan datang ke lokasi kami dengan menunjukkan kode transaksi.
                                         </div>`
                                 $('#ongkir').html(html);
                             }
@@ -614,7 +614,7 @@
                                             <div class="col-12 text-center mt-2">
                                                 Setelah pembayaran berhasil, kami akan mengirimkan pesan kepada Anda melalui WhatsApp untuk menginformasikan tentang kurir Gojek.<br>
                                                 <strong>Catatan : Biaya kurir Gojek di tanggung pembeli.<br></strong>
-                                                <div class="text-warning"><strong>Peringatan : Maksimal 15km dari toko.</strong></div>
+                                                <div class="text-warning"><strong>Peringatan : Maksimal 15km dari lokasi kami.</strong></div>
                                             </div>`
                                     $('#ongkir').html(html);
                                 }

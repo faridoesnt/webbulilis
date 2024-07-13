@@ -17,28 +17,36 @@
             <div class="dashboard-content">
                 <div class="row">
                     <div class="col-md-4">
-                    <div class="card mb-2">
-                        <div class="card-body">
-                        <div class="dashboard-card-title">Total Pelanggan</div>
-                        <div class="dashboard-card-subtitle">{{ $customer }}</div>
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div class="dashboard-card-title">Total Pelanggan</div>
+                                <div class="dashboard-card-subtitle">{{ $customer }}</div>
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <div class="col-md-4">
-                    <div class="card mb-2">
-                        <div class="card-body">
-                        <div class="dashboard-card-title">Pendapatan</div>
-                        <div class="dashboard-card-subtitle">Rp {{ number_format($revenue) }}</div>
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div class="dashboard-card-title">Pendapatan</div>
+                                <div class="dashboard-card-subtitle">Rp {{ number_format($revenue) }}</div>
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <div class="col-md-4">
-                    <div class="card mb-2">
-                        <div class="card-body">
-                        <div class="dashboard-card-title">Transaksi</div>
-                        <div class="dashboard-card-subtitle">{{ $transaction }}</div>
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div class="dashboard-card-title">Pendapatan Perbulan <i>({{ date('d-m-Y', strtotime($start_of_month)) }} - {{ date('d-m-Y', strtotime($end_of_month)) }})</i></div>
+                                <div class="dashboard-card-subtitle">Rp {{ number_format($revenue) }}</div>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div class="dashboard-card-title">Transaksi</div>
+                                <div class="dashboard-card-subtitle">{{ $transaction }}</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

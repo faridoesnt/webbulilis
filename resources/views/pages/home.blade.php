@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    UMKM Universitas Gunadarma
+    Seeowrens
 @endsection
 
 @section('content')
@@ -18,13 +18,13 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="/images/baner1.jpg" alt="Carousel Image" class="d-block w-100"/>
+                                    <img src="/images/baner1.png" alt="Carousel Image" class="d-block w-100"/>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="/images/baner2.jpg" alt="Carousel Image" class="d-block w-100"/>
+                                    <img src="/images/baner2.png" alt="Carousel Image" class="d-block w-100"/>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="/images/baner3.jpg" alt="Carousel Image" class="d-block w-100"/>
+                                    <img src="/images/baner3.png" alt="Carousel Image" class="d-block w-100"/>
                                 </div>
                             </div>
                         </div>

@@ -29,9 +29,9 @@ class DashboardController extends Controller
             return $carry + $item->price;
         });
 
-        $data['transactions_count'] = $transactions->count();
-        $data['transactions_data'] = $transactions->orderBy('created_at', 'desc')->paginate(3);
-        $data['revenue']   = $revenue;
+        $data['transactions_count']     = $transactions->count();
+        $data['transactions_data']      = $transactions->orderBy('created_at', 'desc')->paginate(3);
+        $data['revenue']                = $revenue;
 
         $view = 'pages.dashboard';
 

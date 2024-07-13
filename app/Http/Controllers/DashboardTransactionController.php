@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Transaction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\TransactionDetail;
@@ -37,5 +38,24 @@ class DashboardTransactionController extends Controller
         $view = 'pages.dashboard-transactions-details';
 
         return response()->view($view, $data);
+    }
+
+    public function receivedOrder(Request $request, $id)
+    {
+        $transactionDetail = TransactionDetail::where('transactions_id', $id)->first();
+        $transactionDetail->shipping_status = 'SUCCESS';
+        $transactionDetail->update();
+
+        $transaction = Transaction::where('id', $id)->first();
+        $transaction->transaction_status = 'SUCCESS';
+        $transaction->update();
+
+        $data = [];
+
+        $transaction_details = TransactionDetail::with(['transaction.user', 'product.galleries'])->where('transactions_id', $id)->firstOrfail();
+
+        $data['transaction_data'] = $transaction_details;
+
+        return redirect()->route('dashboard-transaction-details', ['id' => $transaction_details->id]);
     }
 }

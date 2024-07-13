@@ -18,7 +18,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-            <p class="pt-4 pb-2">2022 UMKM Universitas Gunadarma - Markisa Manis. All Rights Reserved.</p>
+            <p class="pt-4 pb-2">2022 UMKM Universitas Gunadarma - Seeowrens. All Rights Reserved.</p>
             </div>
         </div>
     </div>

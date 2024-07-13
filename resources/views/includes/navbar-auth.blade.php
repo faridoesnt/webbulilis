@@ -5,7 +5,7 @@
     <div class="container">
     <a href="{{ route('home') }}" class="navbar-brand">
         <h4>
-            <strong>UMKM - Markisa</strong>
+            <strong>Seeowrens</strong>
         </h4>
     </a>
     <button
@@ -20,6 +20,9 @@
         <ul class="navbar-nav ml-auto">
         <li class="nav-item">
             <a href="{{ route('home') }}" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('info-bidang-lain-teknik-arsitek') }}" class="nav-link">INFO BIDANG LAIN</a>
         </li>
         {{-- <li class="nav-item">
             <a href="{{ route('categories') }}" class="nav-link"><strong>KATEGORI</strong></a>

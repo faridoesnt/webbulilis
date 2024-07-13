@@ -84,7 +84,7 @@ class CheckoutController extends Controller
         ]);
         // $user->update($request->except('total_price'));
 
-        $code = 'UMKM Universitas Gunadarma -' . mt_rand(0000, 9999);
+        $code = 'Seeowrens -' . mt_rand(0000, 9999);
         $carts = Cart::with(['product', 'user'])->where('users_id', Auth::user()->id)->get();
 
         // transaction create

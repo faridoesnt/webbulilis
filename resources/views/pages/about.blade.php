@@ -15,7 +15,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        UMKM UNIVERSITAS GUNADARMA - MARKISA MANIS<br><br>
+                        UMKM UNIVERSITAS GUNADARMA - SEEOWRENS<br><br>
 
 
                         Sari Markisa Manis adalah minuman kemasan tradisional yang dibuat dari bahan-bahan alami dan tanpa bahan pengawet. 
