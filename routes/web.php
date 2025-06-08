@@ -22,7 +22,7 @@ use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\Admin\AdminProductController;
 use App\Http\Controllers\Admin\AdminProductGalleryController;
 use App\Http\Controllers\Admin\AdminProductQuantityController;
-use App\Http\Controllers\infoBidangLainController;
+use App\Http\Controllers\InfoBidangLainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,15 +38,15 @@ use App\Http\Controllers\infoBidangLainController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Info Bidang Lain
-Route::get('/info-bidang-lain-teknik-arsitek', [infoBidangLainController::class, 'teknikArsitek'])->name('info-bidang-lain-teknik-arsitek');
-Route::get('/info-bidang-lain-teknik-sipil', [infoBidangLainController::class, 'teknikSipil'])->name('info-bidang-lain-teknik-sipil');
-Route::get('/info-bidang-lain-ilmu-komputer', [infoBidangLainController::class, 'ilmuKomputer'])->name('info-bidang-lain-ilmu-komputer');
-Route::get('/info-bidang-lain-ilmu-ekonomi-manajemen', [infoBidangLainController::class, 'ilmuEkonomiManajemen'])->name('info-bidang-lain-ilmu-ekonomi-manajemen');
-Route::get('/info-bidang-lain-ilmu-ekonomi-akuntansi', [infoBidangLainController::class, 'ilmuEkonomiAkuntansi'])->name('info-bidang-lain-ilmu-ekonomi-akuntansi');
-Route::get('/info-bidang-lain-agroteknologi', [infoBidangLainController::class, 'agroteknologi'])->name('info-bidang-lain-agroteknologi');
-Route::get('/info-bidang-lain-ilmu-komunikasi', [infoBidangLainController::class, 'ilmuKomunikasi'])->name('info-bidang-lain-ilmu-komunikasi');
-Route::get('/info-bidang-lain-teknik-elektro', [infoBidangLainController::class, 'teknikElektro'])->name('info-bidang-lain-teknik-elektro');
-Route::get('/info-bidang-lain-teknik-industri', [infoBidangLainController::class, 'teknikIndustri'])->name('info-bidang-lain-teknik-industri');
+Route::get('/info-bidang-lain-teknik-arsitek', [InfoBidangLainController::class, 'teknikArsitek'])->name('info-bidang-lain-teknik-arsitek');
+Route::get('/info-bidang-lain-teknik-sipil', [InfoBidangLainController::class, 'teknikSipil'])->name('info-bidang-lain-teknik-sipil');
+Route::get('/info-bidang-lain-ilmu-komputer', [InfoBidangLainController::class, 'ilmuKomputer'])->name('info-bidang-lain-ilmu-komputer');
+Route::get('/info-bidang-lain-ilmu-ekonomi-manajemen', [InfoBidangLainController::class, 'ilmuEkonomiManajemen'])->name('info-bidang-lain-ilmu-ekonomi-manajemen');
+Route::get('/info-bidang-lain-ilmu-ekonomi-akuntansi', [InfoBidangLainController::class, 'ilmuEkonomiAkuntansi'])->name('info-bidang-lain-ilmu-ekonomi-akuntansi');
+Route::get('/info-bidang-lain-agroteknologi', [InfoBidangLainController::class, 'agroteknologi'])->name('info-bidang-lain-agroteknologi');
+Route::get('/info-bidang-lain-ilmu-komunikasi', [InfoBidangLainController::class, 'ilmuKomunikasi'])->name('info-bidang-lain-ilmu-komunikasi');
+Route::get('/info-bidang-lain-teknik-elektro', [InfoBidangLainController::class, 'teknikElektro'])->name('info-bidang-lain-teknik-elektro');
+Route::get('/info-bidang-lain-teknik-industri', [InfoBidangLainController::class, 'teknikIndustri'])->name('info-bidang-lain-teknik-industri');
 
 // About US
 Route::get('/about', [HomeController::class, 'about'])->name('about');
