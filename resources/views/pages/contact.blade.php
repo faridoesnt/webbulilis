@@ -35,6 +35,17 @@
                         LPM UG Gedung E541 Kelapa Dua - Depok
                     </div>
                 </div>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h3 class="mb-3">Informasi Ayam Bakar Solo</h3><hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        Klik tautan berikut<br>
+                        <a href="https://mp.possaku.com/marketplace/?store=1736323314532">https://mp.possaku.com/marketplace/?store=1736323314532</a>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
